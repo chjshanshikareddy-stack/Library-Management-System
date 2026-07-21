@@ -1,0 +1,12 @@
+USE LibraryDB;
+
+DELIMITER $$
+
+CREATE PROCEDURE ShowBooks()
+BEGIN
+    SELECT * FROM Books;
+END $$
+
+DELIMITER ;
+
+CALL ShowBooks();
